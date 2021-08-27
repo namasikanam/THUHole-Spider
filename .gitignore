@@ -1,0 +1,9 @@
+__pycache__/
+hole/
+hole1/
+nsfw/
+hole.json
+nsfw.json
+test.ipynb
+test.py
+.ipynb_checkpoints/
