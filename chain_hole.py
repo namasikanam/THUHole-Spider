@@ -33,10 +33,10 @@ class Hole:
         return r_json
 
     @staticmethod
-    def download_img(reply,num,id):
+    def download_img(reply,num,id,root,url1):
         if reply['url'] != "":
-                path = hole.root + str(reply[id])+'.jpeg'
-                img_url = hole.url1 + reply['url']
+                path = root + str(reply[id])+'.jpeg'
+                img_url = url1 + reply['url']
                 print(path)
                 if not os.path.exists(path):
                     print(img_url)
@@ -56,9 +56,9 @@ class Hole:
         data = hole.get_json()['data']
         post = hole.get_json()['post']
         num = 0
-        num = hole.download_img(post,num,'pid')
+        num = hole.download_img(post,num,'pid',hole.root,hole.url1)
         for reply in data:
-            num = hole.download_img(reply,num,'cid')
+            num = hole.download_img(reply,num,'cid',hole.root,hole.url1)
         if num == 0:
             print('No Picture Exists!')
     
