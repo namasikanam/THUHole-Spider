@@ -11,7 +11,7 @@ import time
 
 header = {
     'user-agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36',
-    'token':'roaayxqywelaxtezkylpd6li3u22osba'
+    'token':'your_token'
 }
 
 url = 'https://tapi.thuhole.com/v3/contents/post/detail?pid={0:d}&device=0&v=v3.0.6-452742'
