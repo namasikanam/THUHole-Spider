@@ -45,7 +45,7 @@ if __name__ == '__main__':
                     continue
 
                 print(r_json)
-                with open(file_name, "w", encoding='utf-8') as f:
+                with open(file_path, "w", encoding='utf-8') as f:
                     json.dump(r_json, f, ensure_ascii=False, indent='\t')
                 time.sleep(2)
             except Exception as e:
