@@ -13,10 +13,10 @@ pip3 install -r requirements.txt
 ## Usage
 
 * set the environment variable `THU_HOLE_TOKEN` as your token of thu hole
-* run `search_hole.py` with arguments
+* run `search_hole.py <start_id> <end_id>` with possible `--path <datapath>`
 
 For example,
 ```bash
-THU_HOLE_TOKEN=blablablabla python3 search_hole.py 1 100 --path ../data
+THU_HOLE_TOKEN=blablablabla python3 search_hole.py 233 666 --path ../data
 ```
 
