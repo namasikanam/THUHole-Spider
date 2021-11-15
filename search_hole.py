@@ -6,7 +6,6 @@ ChimesZ Copyright
 import requests
 import json
 import os
-from chain_hole import Hole
 import traceback
 import time
 import sys
@@ -21,8 +20,6 @@ url1 = 'https://tapi.thuhole.com/v3/contents/search?pagesize=50&page={0:d}&keywo
 #url = url1.format(1,'%23nsfw') #在此处修改，默认为nsfw,性相关代码为'%23%E6%80%A7%E7%9B%B8%E5%85%B3'
 
 url_search = 'https://tapi.thuhole.com/v3/contents/post/detail?pid={0:d}&device=0&v=v3.0.6-454542'
-
-root = 'E:\\THUmaster\\class\\visualization\\data' #更改为自己的存储路径
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='THU Hole spider')
