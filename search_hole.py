@@ -13,7 +13,7 @@ import argparse
 
 header = {
     'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36',
-    'token': os.environ['THU_HOLE_TOKEN']  #更改为自己的token
+    'token': os.environ['THU_HOLE_TOKEN']
 }
 url1 = 'https://tapi.thuhole.com/v3/contents/search?pagesize=50&page={0:d}&keywords={1:s}&device=0&v=v3.0.6-452728' #分别为爬取页数与搜索关键词，无法爬取回复
 
